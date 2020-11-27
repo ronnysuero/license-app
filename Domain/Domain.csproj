@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug;Release;TEST;LOCAL</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\Cierre\**" />
+    <Compile Remove="Interfaces\Circuito\**" />
+    <Compile Remove="Interfaces\Consulta\**" />
+    <Compile Remove="Interfaces\Cubicacion\**" />
+    <Compile Remove="Interfaces\DisenoCalculo\**" />
+    <Compile Remove="Interfaces\Mantenimiento\**" />
+    <Compile Remove="Interfaces\Seguridad\**" />
+    <EmbeddedResource Remove="Interfaces\Cierre\**" />
+    <EmbeddedResource Remove="Interfaces\Circuito\**" />
+    <EmbeddedResource Remove="Interfaces\Consulta\**" />
+    <EmbeddedResource Remove="Interfaces\Cubicacion\**" />
+    <EmbeddedResource Remove="Interfaces\DisenoCalculo\**" />
+    <EmbeddedResource Remove="Interfaces\Mantenimiento\**" />
+    <EmbeddedResource Remove="Interfaces\Seguridad\**" />
+    <None Remove="Interfaces\Cierre\**" />
+    <None Remove="Interfaces\Circuito\**" />
+    <None Remove="Interfaces\Consulta\**" />
+    <None Remove="Interfaces\Cubicacion\**" />
+    <None Remove="Interfaces\DisenoCalculo\**" />
+    <None Remove="Interfaces\Mantenimiento\**" />
+    <None Remove="Interfaces\Seguridad\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Desyco.Abstractions" Version="1.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

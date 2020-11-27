@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>8</LangVersion>
+    <Configurations>Debug;Release;TEST;LOCAL</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Cierre\**" />
+    <Compile Remove="Services\Circuito\**" />
+    <Compile Remove="Services\Consulta\**" />
+    <Compile Remove="Services\Cubicacion\**" />
+    <Compile Remove="Services\DisenoCalculo\**" />
+    <Compile Remove="Services\Mantenimiento\**" />
+    <Compile Remove="Services\Reporte\**" />
+    <Compile Remove="Services\Seguridad\**" />
+    <Compile Remove="Services\Services\**" />
+    <EmbeddedResource Remove="Services\Cierre\**" />
+    <EmbeddedResource Remove="Services\Circuito\**" />
+    <EmbeddedResource Remove="Services\Consulta\**" />
+    <EmbeddedResource Remove="Services\Cubicacion\**" />
+    <EmbeddedResource Remove="Services\DisenoCalculo\**" />
+    <EmbeddedResource Remove="Services\Mantenimiento\**" />
+    <EmbeddedResource Remove="Services\Reporte\**" />
+    <EmbeddedResource Remove="Services\Seguridad\**" />
+    <EmbeddedResource Remove="Services\Services\**" />
+    <None Remove="Services\Cierre\**" />
+    <None Remove="Services\Circuito\**" />
+    <None Remove="Services\Consulta\**" />
+    <None Remove="Services\Cubicacion\**" />
+    <None Remove="Services\DisenoCalculo\**" />
+    <None Remove="Services\Mantenimiento\**" />
+    <None Remove="Services\Reporte\**" />
+    <None Remove="Services\Seguridad\**" />
+    <None Remove="Services\Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\ComunService.cs" />
+    <Compile Remove="Services\FastReportExportService.cs" />
+    <Compile Remove="Services\QueryService.cs" />
+    <Compile Remove="Services\ReporteService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataProvider\DataProvider.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
